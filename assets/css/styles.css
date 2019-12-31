@@ -1,27 +1,30 @@
 body{
     padding-top: 50px;
     padding-bottom: 50px;
+    position: relative;
+    overflow-x: hidden !important;
 }
 
 html, body, html * {
-    /* font-family: 'Roboto', sans-serif; */
     font-family: 'Lato', sans-serif;
 }
 
 .banner-cv-container{
     height: 200px;
+    padding-right: 0;
+    padding-left: 15px;
 }
 
 .banner-image{
-    width: 101.4%;
+    width: -webkit-fill-available;
     z-index: -1;
-    object-fit: cover;
     height: 200px;
     filter: brightness(75%);
 }
 
 .profile-image{
     width: 165px;
+    height: 165px;
     border-radius: 50%;
     margin-right: 40px;
 }
@@ -30,7 +33,7 @@ html, body, html * {
     display: inline-flex;
     position: relative;
     bottom: 176px;
-    left: 50px;
+    padding-left: 50px;
 }
 
 .title-header{
@@ -65,11 +68,10 @@ html, body, html * {
 .perfil-title:before {
     content : "";
     position: absolute;
-    /* left    : 0; */
     top  : 68px;
     height  : 1px;
-    width   : 15%;  /* or 100px */
-    border-bottom: 6px solid rgba(0,0,0,.4);
+    width   : 15%; 
+    border-bottom: 6px solid rgb(1,114,170);
   }
 
   .perfil-title{
@@ -84,7 +86,6 @@ html, body, html * {
 
   .job-name{
       font-weight: bold;
-      opacity: 0.8;
       text-transform: uppercase;
   }
 
@@ -112,4 +113,62 @@ html, body, html * {
 
   .mbot-7{
     margin-bottom: 7px;
+  }
+
+  .social-network-container{
+    position: fixed;
+    top: 40%;
+    padding: 20px;
+    background-color: rgb(239,239,239);
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+  }
+
+  .social-network-container img:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: 767px) {   
+    .social-network-container img:hover{
+        transform: scale(1.5);
+        cursor: pointer;
+    } 
+    .banner-image{
+        width: fit-content;
+    }
+    .picture-title-container{
+        padding-left: 15px;
+    }
+    .banner-cv-container{
+        height: 200px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .profile-image{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+    .title-header{
+        max-width: 125px;
+        font-size: 22px;
+    }
+    body{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .work-experience-container{
+        margin-top: 40px;
+        padding-left: 15px;
+    }
+    .work-experience-title:before{
+        content: "";
+        position: absolute;
+        top: 100px;
+        height: 1px;
+        width: 15%;
+        border-bottom: 6px solid rgb(1,114,170);
+    }
   }
