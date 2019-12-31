@@ -135,7 +135,7 @@ html, body, html * {
         cursor: pointer;
     } 
     .banner-image{
-        width: fit-content;
+        width: 100%;
     }
     .picture-title-container{
         padding-left: 15px;
@@ -152,7 +152,7 @@ html, body, html * {
         margin-right: 20px;
     }
     .title-header{
-        max-width: 125px;
+        max-width: 165px;
         font-size: 22px;
     }
     body{
