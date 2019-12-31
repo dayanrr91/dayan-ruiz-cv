@@ -16,7 +16,12 @@
     
 </head>
 <body>  
-    <div class="container">        
+    <div class="container">   
+        <!-- <div class="row text-right" style="margin-bottom: 5px;;">
+            <div class="col-12 text-right" style="padding-right: 0;">
+                <input class="btn btn-descargar" type="button" value="Descargar">
+            </div>            
+        </div>      -->
         <div class="row">
             <div class="banner-cv-container">
                 <img class="banner-image" src="./assets/img/banner.png" alt="">
@@ -34,7 +39,7 @@
                         <h3 class="perfil-title">Perfil</h3>
                         <p class="profile-section-content "><strong>Software Enginner/Full Stack .NET Developer</strong> con más de cinco años de experiencia en desarrollo web.</p>
                         <p class="profile-section-content "><strong>Pasión</strong> por <strong>aprender</strong>, <strong>programar</strong>, <strong>mejorar</strong> mis habilidades y <strong>crecer profesionalmente</strong>.</p>
-                        <p class="profile-section-content ">Buscando nuevos <strong>retos</strong> y extremadamente <strong>motivado</strong> para <strong>desafíos</strong> de mayor <strong>impacto</strong>.</p>
+                        <p class="profile-section-content ">Buscando nuevos <strong>retos</strong> y extremadamente <strong>motivado</strong> para causar un mayor <strong>impacto</strong> en la <strong>industria</strong>.</p>
                     </div>                    
                 </div>
                 <div class="sub-section-parent">
@@ -154,10 +159,20 @@
         </div>
     </div>
     <div class="icon-bar">
+        <div class="spain-icon-container"><img src="./assets/icons/usa.ico" class="spain-icon usa-icon" alt=""></div>
+
         <a href="https://www.linkedin.com/in/dayan-ruiz-riera/" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
         <a href="https://stackoverflow.com/users/9052194/dayanrr91/" target="_blank" class="stackoverflow"><i class="fa fa-stack-overflow"></i></a> 
         <a href="https://twitter.com/dayanrr91/" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a> 
         <a href="https://github.com/dayanrr91/" target="_blank" class="github"><i class="fa fa-github"></i></a> 
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".spain-icon-container").click(function(){
+                window.location.href = '/';
+            });            
+        });
+    </script>
 </body>
 </html>

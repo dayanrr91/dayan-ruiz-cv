@@ -16,7 +16,10 @@
     
 </head>
 <body>  
-    <div class="container">        
+    <div class="container">      
+        <!-- <div class="row buttons-language-download">
+            <input class="btn change-to-spanish" type="button" value="Change to Spanish">
+        </div>   -->
         <div class="row">
             <div class="banner-cv-container">
                 <img class="banner-image" src="./assets/img/banner.png" alt="">
@@ -34,7 +37,7 @@
                         <h3 class="perfil-title">Profile</h3>
                         <p class="profile-section-content "><strong>Software Enginner/Full Stack .NET Developer</strong> with more than five years of experience in web development.</p>
                         <p class="profile-section-content "><strong>Passion</strong> for <strong>learning</strong>, <strong>coding</strong>, <strong>improve</strong> my skills and <strong> grow professionally</strong>.</p>
-                        <p class="profile-section-content ">Looking for new <strong>challenges</strong> and extremely <strong>motivated</strong> for <strong>bigger challenges</strong>.</p>
+                        <p class="profile-section-content ">Looking for new <strong>challenges</strong> and extremely <strong>motivated</strong> to cause a good <strong>impact</strong> on the <strong>industry</strong>.</p>
                     </div>                    
                 </div>
                 <div class="sub-section-parent">
@@ -154,10 +157,20 @@
         </div>
     </div>
     <div class="icon-bar">
+        <div class="spain-icon-container"><img src="./assets/icons/spain.ico" class="spain-icon" alt=""></div>
+
         <a href="https://www.linkedin.com/in/dayan-ruiz-riera/" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
         <a href="https://stackoverflow.com/users/9052194/dayanrr91/" target="_blank" class="stackoverflow"><i class="fa fa-stack-overflow"></i></a> 
         <a href="https://twitter.com/dayanrr91/" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a> 
         <a href="https://github.com/dayanrr91/" target="_blank" class="github"><i class="fa fa-github"></i></a> 
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".spain-icon-container").click(function(){
+                window.location.href = '/es.html';
+            });            
+        });
+    </script>
 </body>
 </html>
