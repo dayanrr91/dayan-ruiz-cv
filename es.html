@@ -5,23 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dayán Ruiz</title>
-
-    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet"> -->
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./assets/css/bootstrap.css"/>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/styles.css"/>
-    <link rel="stylesheet" href="./assets/css/social-network.css"/>
-    
+    <link rel="stylesheet" href="./assets/css/social-network.css"/>    
 </head>
 <body>  
     <div class="container">   
-        <!-- <div class="row text-right" style="margin-bottom: 5px;;">
-            <div class="col-12 text-right" style="padding-right: 0;">
-                <input class="btn btn-descargar" type="button" value="Descargar">
-            </div>            
-        </div>      -->
         <div class="row">
             <div class="banner-cv-container">
                 <img class="banner-image" src="./assets/img/banner.png" alt="">
@@ -159,7 +152,7 @@
         </div>
     </div>
     <div class="icon-bar">
-        <div class="spain-icon-container"><img src="./assets/icons/usa.ico" class="spain-icon usa-icon" alt=""></div>
+        <div onclick="redirectToEnglish()" class="spain-icon-container"><img src="./assets/icons/usa.ico" class="spain-icon usa-icon" alt=""></div>
 
         <a href="https://www.linkedin.com/in/dayan-ruiz-riera/" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
         <a href="https://stackoverflow.com/users/9052194/dayanrr91/" target="_blank" class="stackoverflow"><i class="fa fa-stack-overflow"></i></a> 
@@ -168,13 +161,10 @@
 
         <a href="./assets/pdf/Software Engineer_FullStack.net Developer Dayan Ruiz Spanish.pdf" download="Software_Engineer_FullStack.net_Developer_Dayan_Ruiz_Espanol.pdf.pdf" class="pdf"><i class="fa fa-download"></i></a> 
     </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script>
-        $(document).ready(function () {
-            $(".spain-icon-container").click(function(){
-                window.location.href = 'https://dayanrr91.github.io/dayan-ruiz-cv/index.html';
-            });            
-        });
+        function redirectToEnglish(){
+            window.location.href = 'https://dayanrr91.github.io/dayan-ruiz-cv/index.html';
+        }      
     </script>
 </body>
 </html>

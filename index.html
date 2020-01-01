@@ -153,7 +153,7 @@
         </div>
     </div>
     <div class="icon-bar">
-        <div class="spain-icon-container"><img src="./assets/icons/spain.ico" class="spain-icon" alt=""></div>
+        <div onclick="redirectToSpanish()" class="spain-icon-container"><img src="./assets/icons/spain.ico" class="spain-icon" alt=""></div>
 
         <a href="https://www.linkedin.com/in/dayan-ruiz-riera/" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
         <a href="https://stackoverflow.com/users/9052194/dayanrr91/" target="_blank" class="stackoverflow"><i class="fa fa-stack-overflow"></i></a> 
@@ -161,23 +161,11 @@
         <a href="https://github.com/dayanrr91/" target="_blank" class="github"><i class="fa fa-github"></i></a> 
 
         <a href="./assets/pdf/Software_Engineer_FullStack.net_Developer_Dayan_Ruiz_English.pdf" download="Software_Engineer_FullStack.net_Developer_Dayan_Ruiz_English.pdf.pdf" class="pdf"><i class="fa fa-download"></i></a> 
-        <!-- <div class="pdf-icon-container"><img src="./assets/icons/pdf.png" class="pdf-icon" alt=""></div> -->
     </div>
-    <!-- <div class="download-bar">
-        
-    </div> -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script>
-        $(document).ready(function () {
-            $(".spain-icon-container").click(function(){
-                window.location.href = 'https://dayanrr91.github.io/dayan-ruiz-cv/es.html';
-            });     
-
-            // $(".pdf").click(function(){
-            //     window.open('./assets/pdf/Software_Engineer_FullStack.net_Developer_Dayan_Ruiz_English.pdf', '_blank');
-            //     // window.location.href = './assets/pdf/Software_Engineer_FullStack.net_Developer_Dayan_Ruiz_English.pdf';
-            // });           
-        });
+        function redirectToSpanish(){
+            window.location.href = 'https://dayanrr91.github.io/dayan-ruiz-cv/es.html';
+        }
     </script>
 </body>
 </html>
