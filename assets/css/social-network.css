@@ -1,14 +1,7 @@
   .github {
     background: rgb(36,41,46);
     color: white;
-  }
-
-  .pdf {
-    background: #bb0000;
-    color: white;
-    position: relative;
-    top: 25px;
-  }
+  } 
   
   .twitter {
     background: #55ACEE;
@@ -58,6 +51,12 @@
   }
 
   @media only screen and (max-width: 767px) {
+    .pdf {
+      background: #bb0000;
+      color: white;
+      position: relative;
+    }
+    
     .icon-bar{
         display: inline-flex;     
         padding-left: 25%;
@@ -93,6 +92,13 @@
 }
 
 @media only screen and (min-width: 768px) {
+    .pdf {
+      background: #bb0000;
+      color: white;
+      position: relative;
+      top: 25px;
+    }
+
     .icon-bar {
         position: fixed;
         top: 50%;
