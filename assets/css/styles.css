@@ -166,7 +166,7 @@ html, body, html * {
     .work-experience-title:before{
         content: "";
         position: absolute;
-        top: 71px;
+        top: 100px;
         height: 1px;
         width: 15%;
         border-bottom: 6px solid rgb(1,114,170);
