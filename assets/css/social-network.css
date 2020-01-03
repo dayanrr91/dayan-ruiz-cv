@@ -59,7 +59,7 @@
     
     .icon-bar{
         display: inline-flex;     
-        padding-left: 25%;
+        padding-left: 15%;
         padding-top: 25px;
         width: 100%;
         background: rgb(239,239,239);  
@@ -83,7 +83,7 @@
       .spain-icon-container{
         position: relative;
         top: 0px;
-        right: 70px;
+        right: 25px;
       }
       .spain-icon-container img{
         position: relative;
