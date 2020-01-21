@@ -3,6 +3,11 @@
     color: white;
   } 
   
+  .medium {
+    background: rgb(36,41,46);
+    color: white;
+  } 
+  
   .twitter {
     background: #55ACEE;
     color: white;
